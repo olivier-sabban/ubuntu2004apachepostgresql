@@ -39,8 +39,3 @@ RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt install nodejs
 RUN npm install -g yarn
-
-RUN service postgresql start
-#RUN dsfsdf
-WORKDIR /var/www/html
-CMD ["apachectl", "-D", "FOREGROUND"]
